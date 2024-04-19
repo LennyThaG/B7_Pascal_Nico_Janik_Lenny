@@ -16,7 +16,7 @@ body {
 .footer {
   height: 70px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #000;
 }
 .content {
   flex-grow: 1;
