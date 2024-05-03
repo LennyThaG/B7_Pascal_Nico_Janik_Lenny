@@ -24,4 +24,6 @@ body {
   padding: 12px;
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Umbruch für Mobilgeräte */
 }
