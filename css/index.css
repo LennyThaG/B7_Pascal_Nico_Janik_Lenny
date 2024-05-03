@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f0f0f0; /* Hintergrundfarbe des Headers */
+    background-color: #00000; /* Hintergrundfarbe des Headers */
 }
 
 .logo img {
