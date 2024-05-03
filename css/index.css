@@ -4,24 +4,36 @@
     max-width: 100%;
     display: block; /* Sicherstellen, dass das Bild ein Blockelement ist */
 }
+.outer-container {
+    display: flex;
+    justify-content: center; /* Zentrieren der inneren Container */
+}
+
+.inner-container {
+    display: flex;
+    border: 2px solid #000; /* Rahmen um beide Blöcke */
+}
+
 .block {
     flex: 1; /* Flexibles Wachstum für beide Blöcke */
-    border: 2px solid #000; /* Rahmen um die Blöcke */
-    margin: 10px; /* Abstand zwischen den Blöcken */
 }
 
 .block img {
     width: 100%; /* Bild auf 100% der Breite des Blocks setzen */
     height: auto; /* Automatische Höhe beibehalten */
+    display: block; /* Bild als Blockelement anzeigen */
 }
 
 @media (max-width: 768px) {
-    .container {
+    .outer-container {
         flex-direction: column; /* Auf Mobilgeräten untereinander anordnen */
     }
 
+    .inner-container {
+        border: none; /* Rahmen auf Mobilgeräten entfernen */
+    }
+
     .block {
-        width: calc(100% - 20px); /* Volle Breite des Viewports mit Abstand */
+        width: 100%; /* Volle Breite auf Mobilgeräten */
     }
 }
-
