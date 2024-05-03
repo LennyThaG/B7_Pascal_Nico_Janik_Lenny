@@ -1,1 +1,32 @@
 /* CSS Code, den es für die Start Page braucht */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Hintergrundfarbe des Headers */
+}
+
+.logo img {
+    height: 50px; /* Höhe des Logos */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Abstand zwischen den Links */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Kein Abstand vor dem ersten Link */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Farbe der Links */
+}
