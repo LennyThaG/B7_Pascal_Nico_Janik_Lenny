@@ -16,8 +16,25 @@ body {
 .footer {
   height: 70px;
   color: #ffffff;
-  background-color: #000;
+  background-color: #67563c;
+  padding: 20px;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a:hover {
+  color: #f7f7f7;
+  text-decoration: underline;
+}
+
+.header a{
+  color: beige;
+  text-decoration: none;
+  margin: 10px;
+}
+
 .content {
   flex-grow: 1;
   background-color: #f7f7f7;
