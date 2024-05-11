@@ -19,29 +19,35 @@
         <a href="./gewinnspiel.html">Gewinnspiel</a>
       </div>
     </div>
-    <div id="game">
-      <div id="game-start">
-        <div class="startScreenText">Klicke, um das Spiel zu starten.</div>
+    <div class="content">
+      <div id="game-container">
+        <div class="game-info">
+          Drücke eine Taste, um zu springen.<br />
+          Weiche den Steinen aus.<br />
+          Erreiche 100 Punkte, um einen Preis zu gewinnen.
+        </div>
+
+        <div id="game">
+          <div id="game-start">
+            <div class="startScreenText">Klicke, um das Spiel zu starten.</div>
+          </div>
+          <div id="game-background"></div>
+          <div id="game-dino"></div>
+          <div id="game-rock"></div>
+          <div id="game-score">0</div>
+        </div>
+
+        <div id="game-end" class="hidden">
+          <div id="game-winner" class="hidden">
+            ⭐ ⭐ ⭐ Glückwunsch ⭐ ⭐ ⭐ <br />
+            Du hast mehr als 100 Punkte erzielt.
+          </div>
+          Das Spiel ist zu Ende.<br />
+          Klicke auf das Spiel, um erneut zu spielen.
+        </div>
       </div>
-      <div id="game-background"></div>
-      <div id="game-dino"></div>
-      <div id="game-rock"></div>
-      <div id="game-score">0</div>
     </div>
-    <div class="footer">
-      <div>Das ist ein Schulprojekt und keine reale Website</div>
-      <div class="names">
-      <span>Janik Küng</span>
-      <span>Nico Jöri</span>
-      <span>Pascal Künzli</span>
-      <span>Lenny Gügler</span>
-      </div>
-      <div class="social-media">
-      <a href="https://www.instagram.com/"><img src="/images/instagram_icon.png" alt="Instagram"></a>
-      <a href="https://www.linkedin.com/"><img src="/images/linkedin_icon.png" alt="LinkedIn"></a>
-      <a href="https://www.facebook.com/"><img src="/images/facebook_icon.png" alt="Facebook"></a>
-      </div>
-    </div>
+    <div class="footer">footer</div>
     <script src="./js/game.js"></script>
   </body>
 </html>
