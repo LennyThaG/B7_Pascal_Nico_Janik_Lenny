@@ -1,0 +1,37 @@
+.titleimage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block; /* Sicherstellen, dass das Bild ein Blockelement ist */
+}
+.container {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .textbox {
+    flex: 1;
+    background-color: #ccc;
+    padding: 10px;
+    margin-right: 10px; /* optional: Füge etwas Abstand zwischen den Textboxen hinzu */
+  }
+  
+  .textbox img {
+    width: 100%; /* Das Bild wird auf die volle Breite der Textbox skaliert */
+    margin-bottom: 10px; /* optional: Füge etwas Abstand zwischen dem Bild und dem Text hinzu */
+  }
+  
+  .textbox p {
+    margin: 0; /* Entfernt den Standardabstand des Absatzes */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Ändere die Ausrichtung auf Spalten, wenn die Bildschirmbreite kleiner als 600px ist */
+    }
+    
+    .textbox {
+      margin-right: 0; /* Entferne den rechten Abstand, damit die Textboxen nicht seitlich verschoben werden */
+      margin-bottom: 10px; /* optional: Füge etwas Abstand zwischen den Textboxen hinzu */
+    }
+  }
