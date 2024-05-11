@@ -35,6 +35,24 @@ body {
   margin: 10px;
 }
 
+.my-button {
+  background-color: #67563c; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.my-button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
 .content {
   flex-grow: 1;
   background-color: #f7f7f7;
@@ -46,6 +64,7 @@ body {
 }
 
 .footer {
+height: 120px;
   display: flex;
   flex-direction: column; /* Ändern in Spaltenlayout für die Namen */
   align-items: center;
