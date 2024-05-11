@@ -11,7 +11,7 @@
   
   .textbox {
     flex: 1;
-    background-color: #ccc;
+    background-color: #f7f7f7;
     padding: 10px;
     margin-right: 10px; /* optional: Füge etwas Abstand zwischen den Textboxen hinzu */
   }
