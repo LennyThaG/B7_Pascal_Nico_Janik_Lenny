@@ -28,8 +28,14 @@
   margin: 0;
 }
 @media only screen and (max-width: 600px) {
+  .menu-row {
+    flex-direction: column; /* Ändere die Flex Direction auf column */
+  }
+
   .textbox {
-    width: 100%;
-    margin-right: 0;
+    flex: none; /* Setze die Flex-Grow-Eigenschaft auf none, um die automatische Breitenanpassung zurückzusetzen */
+    width: 100%; /* Setze die Breite auf 100%, um die volle Breite des Containers zu nutzen */
+    margin-right: 0; /* Entferne den rechten Seitenabstand */
   }
 }
+
