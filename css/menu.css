@@ -15,8 +15,8 @@
 .textbox {
   flex: 1;
   background-color: #f7f7f7;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 30px;
+  margin-bottom: 30px;
   width: calc(50% - 10px);
 }
 .textbox img {
