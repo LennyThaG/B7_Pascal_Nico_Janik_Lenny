@@ -24,9 +24,14 @@
   width: 100%;
   margin-bottom: 10px;
 }
-.textbox p {
-  margin: 0;
+.textbox h1 {
+  margin-left: 20px;
 }
+
+.textbox p {
+  margin: 0 20px 20px 20px;
+}
+
 @media only screen and (max-width: 600px) {
   .menu-row {
     flex-direction: column; /* Ändere die Flex Direction auf column */
