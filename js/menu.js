@@ -35,6 +35,8 @@ const onClickSubmit = async () => {
     Adress: Adress.value,
     Time: Time.value,
     SteakChoice: SteakChoice.value,
-    CookingLevel: CookingLevel.value
+    CookingLevel: CookingLevel.value,
+    Sides: sides.value,
+    Sauce: sauce.value,
   });
 }
