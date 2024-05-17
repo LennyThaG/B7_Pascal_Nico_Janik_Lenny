@@ -52,6 +52,22 @@
   margin: 0 20px 20px 20px;
 }
 
+.container-animation {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal-scrolling-items {
+  display: flex;
+  font-size: 40px;
+  width: 2600px;
+  will-change: transform; /* Optimierung für bessere Performance */
+}
+
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
+}
+
 
 @media only screen and (max-width: 992px) {
   .overlay-text {
