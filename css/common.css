@@ -34,10 +34,11 @@ body {
   margin: 10px;
 }
 
-.nav-border {border-bottom: 4px solid beige;
-	     font-size: 18px;
-	     padding-bottom: 3px;
-	    }
+.nav-border {
+  border-bottom: 4px solid beige;
+	font-size: 18px;
+	padding-bottom: 3px;
+}
 
 .my-button {
   background-color: #67563c; 
@@ -49,7 +50,8 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-top: 10px;
+  margin: 20px;
+
 }
 
 .my-button:hover {
@@ -68,7 +70,7 @@ body {
 }
 
 .footer {
-height: 10%;
+  height: 140px;
   display: flex;
   flex-direction: column; /* Ändern in Spaltenlayout für die Namen */
   align-items: center;
