@@ -94,3 +94,73 @@
   }
 }
 
+.formular {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+form {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #67563c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+button:hover {
+  color: #67563c;
+  background-color: white;
+  border: solid;
+  border-radius: 5px;
+  border-color: #67563c;
+}
+
+/* Medienabfrage für mobile Geräte */
+@media only screen and (max-width: 600px) {
+  .form-row {
+      flex-direction: column; /* Ändere die Flex Direction auf column, um die Felder in einer Spalte anzuzeigen */
+  }
+
+  .form-group {
+      flex: none; /* Setze die Flex-Grow-Eigenschaft auf none, um die automatische Breitenanpassung zurückzusetzen */
+      width: 100%; /* Setze die Breite auf 100%, um die volle Breite des Containers zu nutzen */
+      margin-right: 0; /* Entferne den rechten Seitenabstand */
+  }
+}
+
