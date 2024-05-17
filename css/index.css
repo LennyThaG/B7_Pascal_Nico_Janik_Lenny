@@ -1,29 +1,67 @@
-.titleimage {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: block; /* Sicherstellen, dass das Bild ein Blockelement ist */
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
 }
+
+.titleimage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 58%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.overlay-button {
+  position: absolute;
+  top: 72%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
 .container {
-    display: flex;
-    margin: 40px;
+  display: flex;
+  margin: 40px;
   }
   
-  .textbox {
-    flex: 1;
-    background-color: #f7f7f7;
-    padding: 10px;
-    margin-right: 10px; /* optional: Füge etwas Abstand zwischen den Textboxen hinzu */
+.textbox {
+  flex: 1;
+  background-color: #f7f7f7;
+  margin-right: 20px;
   }
   
-  .textbox img {
-    width: 100%; /* Das Bild wird auf die volle Breite der Textbox skaliert */
-    margin-bottom: 10px; /* optional: Füge etwas Abstand zwischen dem Bild und dem Text hinzu */
+.textbox img {
+  width: 100%; /* Das Bild wird auf die volle Breite der Textbox skaliert */
+  margin-bottom: 10px; /* optional: Füge etwas Abstand zwischen dem Bild und dem Text hinzu */
   }
   
-  .textbox p {
-    margin: 0; /* Entfernt den Standardabstand des Absatzes */
+.textbox h1 {
+  margin-left: 20px;
+}
+  
+.textbox p {
+  margin: 0 20px 20px 20px;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .overlay-text {
+    font-size: 1.3em;
+        
   }
+  .overlay-button {
+      display: none;
+    }
+}
 
   @media only screen and (max-width: 600px) {
     .container {
@@ -34,4 +72,9 @@
       margin-right: 0; /* Entferne den rechten Abstand, damit die Textboxen nicht seitlich verschoben werden */
       margin-bottom: 10px; /* optional: Füge etwas Abstand zwischen den Textboxen hinzu */
     }
+
+    .overlay-text {
+      display: none;
   }
+}
+
