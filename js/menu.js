@@ -22,3 +22,19 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
       alert('Bitte füllen Sie alle Felder im Formular aus.');
   }
 });
+
+//Speichert die Daten in der Datenbank:
+
+const onClickSubmit = async () => {
+  // Speichert die Daten in der Datenbank
+  await databaseClient.insertInto("Order", {
+    Prename: Prename.value,
+    Name: Name.value,
+    Phone: Phone.value,
+    Email: Email.value,
+    Adress: Adress.value,
+    Time: Time.value,
+    SteakChoice: SteakChoice.value,
+    CookingLevel: CookingLevel.value
+  });
+}
