@@ -60,8 +60,9 @@
 .horizontal-scrolling-items {
   display: flex;
   font-size: 40px;
+  color: #67563c;
   width: 2600px;
-  will-change: transform; /* Optimierung für bessere Performance */
+  will-change: transform;
 }
 
 .horizontal-scrolling-items__item {
