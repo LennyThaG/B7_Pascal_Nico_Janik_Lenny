@@ -5,8 +5,8 @@
 */
 
 // Ändern Sie die folgenden beiden Werte, um ihre Datenbank zu verbinden.
-const GROUP_NAME = "teacher";
-const PASSWORD = "vf9bm0k4uoji7o4b";
+const GROUP_NAME = "b7";
+const PASSWORD = "jdczev3isjqpqw8t";
 
 const SERVER_URL = "https://ict-290.herokuapp.com/sql";
 const databaseClient = {
@@ -64,7 +64,7 @@ const databaseClient = {
 /*
 Den folgenden Code müssen Sie nicht in Ihr Projekt übernehmen. 
 Dient als Vorlage für die Verwendung von executeSqlQuery und insertInto.
-*/
+
 const run = async () => {
   const users = await databaseClient.executeSqlQuery(
     "SELECT * user LIMIT 2 ORDER BY ID DESC"
@@ -78,3 +78,4 @@ const run = async () => {
   });
 };
 //run();
+*/
