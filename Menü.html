@@ -45,6 +45,86 @@
         </div>
       </div>
     </div>
+        <div class="formular">
+      <form id="orderForm">
+        <h1>Bestellung</h1>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Nachname" maxlength="50" required>
+            </div>
+            <div class="form-group">
+                <label for="firstname">Vorname:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Vorname" maxlength="50" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phone">Telefon:</label>
+                <input type="text" id="phone" name="phone" placeholder="+41 12 345 67 89" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="max.musterman@mail.com" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="address">Adresse:</label>
+                <input type="text" id="address" name="address" placeholder="Adresse"  maxlength="80" required>
+            </div>
+            <div class="form-group">
+                <label for="deliveryTime">Lieferzeit:</label>
+                <input type="text" id="deliveryTime" name="deliveryTime" placeholder="00:00 Uhr" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="meatType">Fleischart:</label>
+                <select id="meatType" name="meatType" required>
+                    <option value="">Bitte wählen</option>
+                    <option value="Kalbssteak">Kalbssteak</option>
+                    <option value="Lamm Racks">Lamm Racks</option>
+                    <option value="Ribeye am Knochen">Ribeye am Knochen</option>
+                    <option value="Rindsteak">Rindsteak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="doneness">Garstufe:</label>
+                <select id="doneness" name="doneness" required>
+                    <option value="">Bitte wählen</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Medium-Rare">Medium-Rare</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Well Done">Well Done</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="sides">Beilagen:</label>
+                <select id="sides" name="sides" required>
+                    <option value="">Bitte wählen</option>
+                    <option value="Baked Potatoes">Baked Potatoes</option>
+                    <option value="Pommes Frites">Pommes Frites</option>
+                    <option value="Grillgemüse">Grillgemüse</option>
+                    <option value="Reis">Reis</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sauce">Sauce:</label>
+                <select id="sauce" name="sauce" required>
+                    <option value="">Bitte wählen</option>
+                    <option value="Ketchup">Ketchup</option>
+                    <option value="Mayonnaise">Mayonnaise</option>
+                    <option value="Barbecue">Barbecue</option>
+                    <option value="Knoblauchsauce">Knoblauchsauce</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit">Absenden</button>
+      </form>
+    </div>
     <div class="footer">
       <div>Das ist ein Schulprojekt und keine reale Website</div>
       <div class="names">
