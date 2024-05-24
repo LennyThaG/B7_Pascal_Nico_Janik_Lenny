@@ -21,6 +21,42 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
       event.preventDefault();
       alert('Bitte füllen Sie alle Felder im Formular aus.');
   }
+
+    // E-Mail Validierung
+    const emailField = document.getElementById('email');
+    if (emailField.value.indexOf('@') === -1) {
+        isValid = false;
+        emailField.classList.add('invalid');
+        alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+    } else {
+        emailField.classList.remove('invalid');
+    }
+
+    // Telefonnummer Validierung
+    const phoneField = document.getElementById('phone');
+    if (!phoneField.value.startsWith('+41')) {
+        isValid = false;
+        phoneField.classList.add('invalid');
+        alert('Bitte geben Sie eine gültige Telefonnummer ein, die mit "+41" beginnt.');
+    } else {
+        phoneField.classList.remove('invalid');
+    }
+        // Lieferzeit Validierung
+        const deliveryTimeField = document.getElementById('deliveryTime');
+        const timePattern = /^([01]\d|2[0-3]):([0-5]\d)$/; // RegEx für Zeitformat HH:MM
+        if (!timePattern.test(deliveryTimeField.value)) {
+            isValid = false;
+            deliveryTimeField.classList.add('invalid');
+            alert('Bitte geben Sie eine gültige Lieferzeit im Format "XX:XX" ein.');
+        } else {
+            deliveryTimeField.classList.remove('invalid');
+        }
+
+    if (!isValid) {
+        // Verhindere das Absenden des Formulars, wenn nicht alle Felder korrekt ausgefüllt sind
+        event.preventDefault();
+    }
+
 });
 
 //Speichert die Daten in der Datenbank:
